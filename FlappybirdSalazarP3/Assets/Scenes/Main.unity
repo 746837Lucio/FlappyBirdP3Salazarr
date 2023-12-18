@@ -267,6 +267,7 @@ GameObject:
   m_Component:
   - component: {fileID: 39343334}
   - component: {fileID: 39343333}
+  - component: {fileID: 39343335}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -287,6 +288,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverText: {fileID: 1287127730}
+  scoreText: {fileID: 33178325}
   gameOver: 0
   scrollSpeed: -5
 --- !u!4 &39343334
@@ -304,6 +306,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &39343335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39343332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ead46d7fe68e2744f9858c7ff1d715c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  columnPoolSize: 5
+  columnPrefab: {fileID: 4751142999121801494, guid: bdd1d9fc0d8cbb0479d5f5dedd25d9a5, type: 3}
+  spawnRate: 4
+  columnMin: -2
+  columnMax: 2
 --- !u!1 &389129980
 GameObject:
   m_ObjectHideFlags: 0
@@ -1548,6 +1567,67 @@ Transform:
   - {fileID: 548829179}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &3987327370906337547
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 132362930922876544, guid: bdd1d9fc0d8cbb0479d5f5dedd25d9a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 781932377319357395, guid: bdd1d9fc0d8cbb0479d5f5dedd25d9a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 781932377319357395, guid: bdd1d9fc0d8cbb0479d5f5dedd25d9a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 781932377319357395, guid: bdd1d9fc0d8cbb0479d5f5dedd25d9a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.3462343
+      objectReference: {fileID: 0}
+    - target: {fileID: 781932377319357395, guid: bdd1d9fc0d8cbb0479d5f5dedd25d9a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 781932377319357395, guid: bdd1d9fc0d8cbb0479d5f5dedd25d9a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 781932377319357395, guid: bdd1d9fc0d8cbb0479d5f5dedd25d9a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 781932377319357395, guid: bdd1d9fc0d8cbb0479d5f5dedd25d9a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 781932377319357395, guid: bdd1d9fc0d8cbb0479d5f5dedd25d9a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 781932377319357395, guid: bdd1d9fc0d8cbb0479d5f5dedd25d9a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 781932377319357395, guid: bdd1d9fc0d8cbb0479d5f5dedd25d9a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4751142999121801494, guid: bdd1d9fc0d8cbb0479d5f5dedd25d9a5, type: 3}
+      propertyPath: m_Name
+      value: Colums
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bdd1d9fc0d8cbb0479d5f5dedd25d9a5, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1557,3 +1637,4 @@ SceneRoots:
   - {fileID: 1826499458}
   - {fileID: 39343334}
   - {fileID: 2090805573}
+  - {fileID: 3987327370906337547}
